@@ -1,0 +1,66 @@
+.rulesContainer {
+  background-color: black;
+  position: absolute;
+  bottom: -200%;
+
+  height: 0;
+  width: 0;
+  z-index: 999;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-transition: height 300ms, width 300ms, bottom 300ms;
+
+  -o-transition: height 300ms, width 300ms, bottom 300ms;
+
+  transition: height 300ms, width 300ms, bottom 300ms;
+}
+
+.rulesArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  -ms-flex-wrap: wrap;
+
+  flex-wrap: wrap;
+}
+
+.closeButton {
+  background-color: transparent;
+
+  font-size: 3rem;
+  color: white;
+
+  position: absolute;
+  top: 8rem;
+  right: 3rem;
+
+  cursor: pointer;
+}
+
+.rulesItem {
+  color: white;
+
+  padding: 3rem;
+}
+
+.rulesItem h2 {
+  font-size: 3rem;
+}
+
+.rulesItem p {
+  font-size: 2rem;
+}
