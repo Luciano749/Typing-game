@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./Reset.css";
 import HomePage from "./components/HomePage/HomePage";
@@ -13,10 +13,10 @@ function App() {
       <ModalProvider>
         <RandomWordsProvider>
           <Router>
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              <Route path="/game" exact component={GamePage} />
-            </Switch>
+            <Routes>
+              <Route path="/" exact element={<HomePage />} />
+              <Route path="/game" exact element={<GamePage />} />
+            </Routes>
           </Router>
         </RandomWordsProvider>
       </ModalProvider>
